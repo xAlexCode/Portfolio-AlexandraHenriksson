@@ -7,42 +7,76 @@
     <title>portfolio-alexandrahenriksson</title>
   </head>
 
-  <body>
-    <video autoplay muted loop id="bg-video">
-      <source src="src/assets/backgroundVideo.mp4" type="video/mp4" />
-    </video>
+<body>
+  <video id="bgVideo" autoplay muted loop>
+    <source src="/src/assets/backgroundVideo.mp4" type="video/mp4">
+  </video>
 
-    <header class="topbar">
-      <div class="macButtons">
-        <span class="button red"></span>
-        <span class="button yellow"></span>
-        <span class="button green"></span>
-      </div>
+  <div class="pageWrapper">
+    <div class="mainLayout">
 
-      <img class="profilePic" src="/assets/profile.jpg" alt="profile" />
-    </header>
+      <aside class="leftSide">
+        <div class="leftSideHeader">
+          <div class="macButtons">
+            <span class="button red"></span>
+            <span class="button yellow"></span>
+            <span class="button green"></span>
+          </div>
+        </div>
 
-    <div class="layout">
-      <aside class="sidebar">
-        <nav>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#jobs">Jobs</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
+        <nav class="sidebarNav">
+           <div class="navGroup">
+            <p class="navTitle">Categories</p>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div> 
+          
+          <div class="navGroup">
+            <p class="navTitle">Social links</p>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://behance.net" target="_blank">Behance</a>
+          </div>
         </nav>
       </aside>
 
-      <main class="content">
-        <section id="about">About content…</section>
-        <section id="skills">Skills content…</section>
-        <section id="jobs">Jobs content…</section>
-        <section id="projects">Projects content…</section>
-        <section id="education">Education content…</section>
+      <main class="rightSide">
+        <div class="rightSideHeader">
+          <img src="src/assets/alex.jpg" alt="Profile" class="profilePic">
+        </div>
+
+        <div class="rightSideMain">
+          <section id="about" class="contentCard">
+            <div>
+              <h1>Alexandra Henriksson</h1>
+              <p>My name is Alexandra Henriksson. I am a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development and have experience with modern web technologies.</p>
+            </div>
+            <img src="src/assets/coolpanda.jpg" alt="Profile" class="image">
+          </section>
+
+          <section id="projects" class="projects">
+            <h1>Projects</h1>
+            <p>Project content…</p>
+          </section>
+
+          <section id="skills" class="skills">
+            <h1>Skills</h1>
+            <p>Skills content…</p>
+          </section>
+
+          <section id="contact" class="contact">
+            <h1>Contact</h1>
+            <p>Contact info…</p>
+          </section>
+        </div>
       </main>
+
     </div>
+  </div>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
-
