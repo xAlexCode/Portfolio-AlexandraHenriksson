@@ -1,0 +1,25 @@
+@use 'variables';
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.75);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: variables.$text-color;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
