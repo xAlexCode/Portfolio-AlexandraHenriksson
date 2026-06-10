@@ -137,6 +137,33 @@
           font-size: variables.$font-size-hero;
         }
       }
+
+      .skillSection {
+        gap: variables.$gap-medium;
+
+        .skillContainer { 
+          display: flex;
+          flex-wrap: wrap;
+          align-items: space-between;
+          gap: variables.$gap-medium;
+
+          .skill {
+            background: variables.$glass-bg;
+            border-radius: variables.$border-radius-medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 6rem;
+            gap: variables.$gap-xsmall;
+            padding: variables.$space-small;
+
+            span {
+              margin: 0;
+              font-size: 0.875rem;
+            }
+          }
+        }
+      }
     }
   }
 
