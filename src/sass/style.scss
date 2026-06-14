@@ -1,5 +1,11 @@
-@use './layout/reset';
+@use './base/reset';
 @use './base/variables';
-@use './layout/mobile';
-@use './layout/tablet';
-@use './layout/desktop';
+
+@use './layout/main';
+@use './layout/leftSide';
+@use './layout/rightSide';
+
+@use './breakpoints/mobile';
+@use './breakpoints/tablet';
+@use './breakpoints/desktop';
+

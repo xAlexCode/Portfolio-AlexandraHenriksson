@@ -1,0 +1,88 @@
+@use '../base/variables';
+@media (min-width: 768px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .macButtons {
+    display: flex;
+    gap: variables.$gap-small;
+  }
+
+  .macButtons .button {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .macButtons .red { background: #ff5f57; }
+  .macButtons .yellow { background: #ffbd2e; }
+  .macButtons .green { background: #28c840; }
+
+  .leftSide {
+    width: 11rem; 
+    display: flex;
+    flex-direction: column;
+    border-right: variables.$glass-border;
+    font-size: variables.$font-size-small;
+
+    .leftSideHeader {
+      height: variables.$header-height-tablet;
+      min-height: variables.$header-height-tablet;
+      display: flex;
+      align-items: center;
+      padding-left: variables.$space-small;
+      border-bottom: variables.$glass-border;
+    }
+    
+    .sidebarNav {
+      padding: variables.$space-small;
+      display: flex;
+      flex-direction: column;
+      gap: variables.$gap-small; 
+      
+      .navGroup { 
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .navTitle {
+        margin: 0;  
+        margin-bottom: variables.$space-xsmall;
+        font-weight: 600;
+        gap: variables.$gap-small;
+      }
+
+      p {
+        font-size: variables.$font-size-medium;
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        gap: variables.$gap-small;
+        padding: 0.5rem 0.6rem;
+        border-radius: variables.$border-radius-small;
+        text-decoration: none;
+        color: variables.$text-color;
+        transition: 0.2s;
+      }
+    }
+
+    .sidebarNav a:hover {
+      background: variables.$glass-bg;
+    }
+  }
+
+  .rightSide {
+    .rightSideHeader {
+      justify-content: flex-end;
+    }
+  }
+
+  .rightSideMain {
+    scroll-padding-top: 5rem;
+  }
+}

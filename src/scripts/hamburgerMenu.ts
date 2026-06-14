@@ -30,7 +30,7 @@ export function initHamburgerMenu() {
     }
   });
 
-  // Stäng meny när man går från mobil → tablet
+  // Stäng meny när man går från mobil till tablet
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 768) {
       leftSide.classList.remove("open");

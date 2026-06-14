@@ -13,13 +13,22 @@
 
 .body {
   margin: 0;
-  padding: 0;
+  padding-top: variables.$space-small;
   font-family: "Inter", sans-serif;
   color: variables.$text-color;
-  overflow: hidden;
+  overflow-x: hidden;
+}
 
+.profilePic {
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mainLayout {
+  @include variables.glass;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  height: calc(100vh - 40px); 
+  overflow: hidden;
 }

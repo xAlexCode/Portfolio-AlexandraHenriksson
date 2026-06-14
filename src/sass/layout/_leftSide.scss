@@ -1,0 +1,53 @@
+@use '../base/variables';
+
+.leftSide {
+  display: none;
+}
+
+.leftSide.open {
+  display: flex;
+  position: fixed;
+  width: 12rem;
+  height: 100vh;
+  background: variables.$glass-bg-dark;
+  padding: variables.$space-small;
+  z-index: 10;
+  flex-direction: column;
+  overflow-y: auto; 
+  animation: slideIn 0.3s ease forwards;
+
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$gap-small;
+    padding-top: variables.$space-xlarge;
+
+    .navGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: variables.$space-medium;
+    }
+
+    .navTitle {
+      margin: 0;  
+      margin-bottom: variables.$space-xsmall;
+      font-weight: 600;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: variables.$gap-small;
+      padding: 0.75rem 1rem;
+      border-radius: variables.$border-radius-small;
+      text-decoration: none;
+      color: variables.$text-color;
+      transition: 0.2s;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}

@@ -1,7 +1,7 @@
-
 // Colors
 $primary-color: #007bff;
 $secondary-color: #6c757d;
+$light-bg-color: #ffffff;
 
 // Text Colors
 $text-color: #ffffff;
@@ -12,7 +12,9 @@ $font-size-medium: 1.125rem;
 $font-size-large: 1.5rem;
 $font-size-hero: 2rem;
 
+
 // Heights
+$header-height-tablet: 3rem;
 $header-height: 3.6rem;
 
 // Spacing
@@ -29,13 +31,13 @@ $gap-smedium: 1.25rem;
 $gap-medium: 2rem;
 $gap-large: 3rem;
 
-
 // Border Radius
 $border-radius-small: 0.625rem;  
 $border-radius-medium: 1.25rem;    
 
 // Glass Effect Variables
 $glass-bg: rgba(0, 0, 0, 0.40);
+$glass-bg-dark: rgba(0, 0, 0, 0.9);
 $glass-blur: 0.625rem;
 $glass-border: 1px solid rgba(255, 255, 255, 0.15);
 

@@ -1,0 +1,60 @@
+@use '../base/variables';
+
+@media (min-width: 1024px) {
+
+  .pageWrapper {
+    width: 80%;
+    max-width: 1400px;
+  }
+
+  .leftSide {
+    width: 15rem; 
+
+    .leftSideHeader {
+      height: variables.$header-height;
+      min-height: variables.$header-height;
+      padding-left: variables.$space-large;
+    }
+    
+    .sidebarNav {
+      padding: variables.$space-large;
+
+      a {
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+.rightSide {
+  .rightSideHeader {
+    height: variables.$header-height;
+    min-height: variables.$header-height;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: variables.$space-small;
+    border-bottom: variables.$glass-border;
+  }
+}
+
+.rightSideMain {
+  padding: variables.$space-large;
+  scroll-padding-top: 5rem;
+
+  h2 {
+    font-size: variables.$font-size-large;
+  }
+
+  .contentCard {
+    padding: variables.$space-medium;
+
+    h1 {
+      font-size: variables.$font-size-hero;
+      }
+    }
+  }
+}
+
+
+
+
