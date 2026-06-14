@@ -1,7 +1,8 @@
 import "./sass/style.scss";
 import { initFullscreen } from "./scripts/fullscreen";
-import { renderProjects  } from "./scripts/renderProjects";
-
+import { initHamburgerMenu } from "./scripts/hamburgerMenu";
+import { renderProjects } from "./scripts/renderProjects";
 
 initFullscreen();
+initHamburgerMenu();
 renderProjects();
