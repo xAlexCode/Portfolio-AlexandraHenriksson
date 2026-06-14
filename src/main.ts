@@ -1,4 +1,4 @@
-import "/src/style.scss";
+import "./sass/style.scss";
 import { initFullscreen } from "./scripts/fullscreen";
 import { renderProjects  } from "./scripts/renderProjects";
 
