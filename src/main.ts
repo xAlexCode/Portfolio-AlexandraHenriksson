@@ -1,11 +1,7 @@
 import "/src/style.scss";
+import { initFullscreen } from "./scripts/fullscreen";
+import { renderProjects  } from "./scripts/renderProjects";
 
-const greenBtn = document.querySelector(".green")!;
 
-greenBtn.addEventListener("click", () => {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen();
-  } else {
-    document.exitFullscreen();
-  }
-});
+initFullscreen();
+renderProjects();

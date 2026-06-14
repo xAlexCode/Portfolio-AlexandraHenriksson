@@ -1,4 +1,4 @@
-@use 'variables';
+@use '/base/variables';
 
 @media (min-width: 1024px) {
 
@@ -130,7 +130,7 @@
         padding: variables.$space-medium;
         border-radius: variables.$border-radius-medium;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        animation: gradient 10s ease infinite;
+        animation: gradient 15s ease infinite;
         background-size: 400% 400%;
 
         h1 {
@@ -141,13 +141,13 @@
       .skillSection {
         display: flex;
         flex-direction: column;
-        gap: variables.$gap-xsmall;
+        gap: variables.$gap-small;
 
         .skillContainer { 
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: variables.$gap-medium;
+          gap: variables.$gap-small;
 
           .skill {
             background: variables.$glass-bg;
