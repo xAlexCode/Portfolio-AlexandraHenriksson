@@ -5,3 +5,9 @@ export interface IProject {
   liveLink: string;
   repoLink: string;
 }
+
+export interface ISkills {
+  id: number;
+  image: string;
+  span: string;
+}
