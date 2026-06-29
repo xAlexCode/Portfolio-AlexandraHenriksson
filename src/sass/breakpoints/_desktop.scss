@@ -45,17 +45,29 @@
       font-size: variables.$font-size-large;
     }
 
+    .projectContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: variables.$gap-medium;
+    }
+
+    .projectCard {
+      padding: variables.$space-medium;
+
+      &:hover {
+        background: variables.$glass-bg;
+        transform: translateY(-4px);
+      }
+    }
+
+
+
     .contentCard {
       padding: variables.$space-medium;
       transition: 0.3s ease;
       
       h1 {
         font-size: variables.$font-size-hero;
-      }
-
-      &:hover {
-        background:  variables.$glass-bg; //ta bort från mobil
-        transform: translateY(-4px);
       }
     }
   }

@@ -49,6 +49,7 @@
     flex-direction: column;
     gap: variables.$gap-small;
     transition: 0.3s ease;
+    height: auto;
 
     h3 {
       margin: 0;
@@ -71,13 +72,7 @@
         color: variables.$text-color;
         background-color: #0078D9;
         text-decoration: none;
-        transition: 0.2s ease;
       }
-    }
-
-    &:hover {
-      background:  variables.$glass-bg; //ta bort från mobil
-      transform: translateY(-4px);
     }
   }
 
