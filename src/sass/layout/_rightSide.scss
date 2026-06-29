@@ -34,6 +34,54 @@
     font-size: variables.$font-size-small;
   }
 
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$gap-small;
+    padding-top: variables.$space-small;
+  }
+
+  .projectCard {
+    border: variables.$glass-border;
+    border-radius: variables.$border-radius-medium;
+    padding: variables.$space-small;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$gap-small;
+    transition: 0.3s ease;
+
+    h3 {
+      margin: 0;
+      font-size: variables.$font-size-medium;
+    }
+
+    p {
+      margin: 0;
+      font-size: variables.$font-size-small;
+    }
+
+    .buttonRow {
+      display: flex;
+      gap: variables.$gap-small;
+      margin-top: variables.$space-small;
+
+      .btn {
+        padding: 0.2rem 0.5rem;
+        border-radius: variables.$border-radius-medium;
+        color: variables.$text-color;
+        background-color: #0078D9;
+        text-decoration: none;
+        transition: 0.2s ease;
+      }
+    }
+
+    &:hover {
+      background:  variables.$glass-bg; //ta bort från mobil
+      transform: translateY(-4px);
+    }
+  }
+
+
   .contentCard {
     padding: variables.$space-small;
     border-radius: variables.$border-radius-medium;

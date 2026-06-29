@@ -25,31 +25,37 @@
     }
   }
 
-.rightSide {
-  .rightSideHeader {
-    height: variables.$header-height;
-    min-height: variables.$header-height;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: variables.$space-small;
-    border-bottom: variables.$glass-border;
-  }
-}
-
-.rightSideMain {
-  padding: variables.$space-large;
-  scroll-padding-top: 5rem;
-
-  h2 {
-    font-size: variables.$font-size-large;
+  .rightSide {
+    .rightSideHeader {
+      height: variables.$header-height;
+      min-height: variables.$header-height;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: variables.$space-small;
+      border-bottom: variables.$glass-border;
+    }
   }
 
-  .contentCard {
-    padding: variables.$space-medium;
+  .rightSideMain {
+    padding: variables.$space-large;
+    scroll-padding-top: 5rem;
 
-    h1 {
-      font-size: variables.$font-size-hero;
+    h2 {
+      font-size: variables.$font-size-large;
+    }
+
+    .contentCard {
+      padding: variables.$space-medium;
+      transition: 0.3s ease;
+      
+      h1 {
+        font-size: variables.$font-size-hero;
+      }
+
+      &:hover {
+        background:  variables.$glass-bg; //ta bort från mobil
+        transform: translateY(-4px);
       }
     }
   }
