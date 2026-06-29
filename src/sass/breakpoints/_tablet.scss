@@ -80,9 +80,28 @@
     .rightSideHeader {
       justify-content: flex-end;
     }
+
+
+    .cardTop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cardHeader {
+      flex: 1;
+    }
+
+    .cardDates {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
   }
 
   .rightSideMain {
     scroll-padding-top: 5rem;
   }
+
+  
 }
