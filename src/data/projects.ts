@@ -18,7 +18,7 @@ export const projects: IProject[] = [
   {
     id: 3,
     title: "Hemmamys",
-    description: "A small interactive online shop featuring product filtering, sorting, dynamic cart updates, and a complete checkout flow. The project includes discounts, form validation, and an automatic reset timer to simulate a real shopping experience.",
+    description: "A small interactive online shop featuring product filtering, sorting, dynamic cart updates and a complete checkout flow. The project includes discounts, form validation, and an automatic reset timer to simulate a real shopping experience.",
     liveLink: "https://xalexcode.github.io/Uppgift-onlineshop-hemmamys/",
     repoLink: "https://github.com/xAlexCode/Uppgift-onlineshop-hemmamys",
   },

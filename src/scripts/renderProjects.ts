@@ -9,7 +9,7 @@ export function renderProjects() {
                <h3>${project.title}</h3>
                <p>${project.description}</p>
                <div class="buttonRow">
-                 <a href="${project.liveLink}" target="_blank" class="btn">Live code</a>
+                 <a href="${project.liveLink}" target="_blank" class="btn">Open</a>
                  <a href="${project.repoLink}" target="_blank" class="btn">Github repo</a>
                </div>
            </div>
