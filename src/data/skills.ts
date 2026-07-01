@@ -45,5 +45,10 @@ export const skills: ISkills[] = [
     id: 9,
     image: "assets/icons/react.png",
     span: "React"
+  },
+  {
+    id: 9,
+    image: "assets/icons/swift.png",
+    span: "Swift"
   }
 ];
